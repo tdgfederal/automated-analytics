@@ -32,7 +32,7 @@ variable "emr_cluster_name" {
 
 variable "emr_cluster_release_label" {
   description = "(Required) The release label for the Amazon EMR release"
-  default     = "automated-analytics"
+  default     = "emr-5.33.0"
 }
 
 variable "emr_cluster_service_role" {
@@ -208,7 +208,7 @@ variable "emr_instance_group_ebs_config" {
 #---------------------------------------------------
 variable "enable_emr_security_configuration" {
   description = "Enable emr security configuration usage"
-  default     = false
+  default     = true
 }
 
 variable "emr_security_configuration_configuration" {

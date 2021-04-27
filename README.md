@@ -2,8 +2,13 @@
 
 Contains terraform code to automatically stand up analytics environment in aws.
 
-## Getting started
+# Prerequisite
+* Git
+* Terraform >=0.12.23
+* AWS Credential
 
+
+## Getting started
 1. clone this repository
 2. `cd automated-analytics`
 3. run `./run.sh init`
@@ -11,11 +16,15 @@ Contains terraform code to automatically stand up analytics environment in aws.
 
 
 ## Usage
-`./run.sh <terraform action> <environment> <region>`  
+> `./run.sh <terraform action>`  
 terraform actions: `init, plan, apply, destroy`
-environment: `dev, prod`
-region: `us-east-1, us-west-2`
+
 
 ## Remove
+> run `./run.sh destroy`
 
-1. run `./run.sh destroy`
+
+
+# Diagram
+
+![Diagram](./diagram.png)
